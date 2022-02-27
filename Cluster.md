@@ -33,10 +33,10 @@ At any point in time X-2 is supported.
 
 Master Upgrade
 ***************
-$ apt-get upgrade -y kubeadm=1.12.0-00
-$ kubectl upgrade plan
-$ kubectl upgrade apply v1.12.0
-$ apt-get upgrade -y kubelet=1.12.0-00
+$ apt-get upgrade -y kubeadm=1.23.1-00
+$ kubeadm upgrade plan v1.23.1
+$ kubeadm upgrade apply v1.23.1
+$ apt-get upgrade -y kubelet=1.23.1-00
 $ systemctl restart kubelet
 
 Node Upgrade
